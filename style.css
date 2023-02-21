@@ -10,12 +10,15 @@
   position: relative;
   overflow: hidden;
   z-index: 10001;
+  margin: -10px;
+  padding: 0px;
 }
 
 .carousel-content {
   display: flex;
   margin: 150px 0 70px;
   transition: 500ms;
+  margin-top: 0px;
 }
 
 @media(max-width: 1024px) {
@@ -73,9 +76,11 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  /* max-width: 1000px; */
   position: relative;
   margin: auto;
+  justify-content: center;
+  width: 60%;
 }
 
 /* Next & previous buttons */
@@ -156,9 +161,9 @@ img {vertical-align: middle;}
   z-index: 10010;
   font-family: 'Josefin Sans', sans-serif;
   padding-left: 40px;
-  position:absolute;
+  position:relative;
   text-align:center;
-  padding-top: 500px;
+  padding-top: 350px;
   padding-bottom: 100px;
   width: 100%;
   text-align: left;
@@ -184,11 +189,41 @@ img {vertical-align: middle;}
   font-family: National Light,Helvetica,sans-serif;
 }
 
-.text {
+.article {
   padding-left: 40px;
-  padding-right: 40px;
+  padding-right: 500px;
   font-family: 'Neuton', serif;
   font-size: 22px;
+  padding-bottom: 20px;
+}
+
+
+/* 
+slanted effect for article text
+.article {
+  position: relative;
+  z-index: 1000000;
+  content: "";
+  right: -10%;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  -webkit-transform: skewX(-10deg);
+  -moz-transform: skewX(-10deg);
+  -ms-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+  
+} */
+
+.article h3 {
+  padding-top: 17px;
+  padding-bottom: 17px;
+  font-size: 35px;
+}
+
+.body {
+  color: black;
 }
 
 .credits {
@@ -202,3 +237,4 @@ img {vertical-align: middle;}
   font-size: 30px;
   padding-bottom: 20px;
 }
+
