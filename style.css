@@ -160,18 +160,20 @@ img {vertical-align: middle;}
 .top{
   z-index: 10010;
   font-family: 'Josefin Sans', sans-serif;
+  /* background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)); */
   padding-left: 40px;
-  position:relative;
+  position: absolute;
+  top: 50%;
+  bottom: 0%;
+  left: 0%;
   text-align:center;
-  padding-top: 350px;
-  padding-bottom: 100px;
   width: 100%;
   text-align: left;
   filter: drop-shadow(16px 16px 10px black);
-  position: absolute;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.55), transparent);
   color: white;
+  padding-bottom: 50px;
 }
+
 
 .top h1 {
   font-size: 80px;
@@ -244,13 +246,16 @@ slanted effect for article text
   position: sticky;
   top: 0;
   padding-right: 10px;
-  width: 40%;
-  height: auto;
+  width: auto;
+  height: 10%;
+  padding-top: 0px;
   
 }
 
 .video-article {
+  padding-top: 0px;
   display: flex;
+  position: relative;
   /* align-items: center; */
   /* justify-content: center; */
 }
