@@ -8,7 +8,7 @@
 /* normal carousel NON HOVER styles */
 .carousel {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   z-index: 10001;
   margin: -10px;
   padding: 0px;
@@ -190,8 +190,9 @@ img {vertical-align: middle;}
 }
 
 .article {
-  padding-left: 40px;
-  padding-right: 500px;
+  padding-top: 0px;
+  padding-right: 50px;
+  padding-left: 30px;
   font-family: 'Neuton', serif;
   font-size: 22px;
   padding-bottom: 20px;
@@ -238,3 +239,18 @@ slanted effect for article text
   padding-bottom: 20px;
 }
 
+.video {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-right: 10px;
+  width: 40%;
+  height: auto;
+  
+}
+
+.video-article {
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: center; */
+}

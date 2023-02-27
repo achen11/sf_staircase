@@ -1,3 +1,15 @@
+let parent = document.querySelector('.sticky').parentElement;
+while (parent) {
+    const hasOverflow = getComputedStyle(parent).overflow;
+    if (hasOverflow !== 'visible') {
+            console.log(hasOverflow, parent);
+    }
+    parent = parent.parentElement;
+}
+
+
+
+
 if (document.querySelectorAll(".carousel").length > 0) {
   let carousels = document.querySelectorAll(".carousel");
   carousels.forEach(carousel => newCarousel(carousel));
